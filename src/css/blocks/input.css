@@ -1,0 +1,33 @@
+.input {
+    width: 100%;
+
+    outline: none;
+    background: #FFFFFF;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    padding: 16px 20px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+
+    transition: border 200ms ease;
+}
+
+.input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ABABAB;
+}
+
+.input:focus,
+.input:hover {
+    border-color: #207FF1;
+}
+

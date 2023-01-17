@@ -1,0 +1,235 @@
+.header {
+    width: 100%;
+
+    background: #F7FAFD;
+    border-radius: 0 0 30px 30px;
+}
+
+.header__row {
+    width: 100%;
+    max-width: 1420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+.header__logoIcon {
+    width: 53px;
+    height: 47px;
+    margin-right: auto;
+}
+
+.header__logoText {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    margin-left: 15px;
+}
+
+.header__menu {
+    margin: 0;
+    width: 100%;
+    max-width: 514px;
+    justify-self: center;
+
+}
+
+.header__menuList {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+}
+
+.header__menuLink {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.header__menuLinkItem {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    margin: 0;
+    padding: 10px 0;
+
+    transition: color 200ms ease;
+}
+
+.header__menuLink:hover .header__menuLinkItem {
+    color: #1672E1;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.header__phone {
+    margin-right: 37px;
+}
+
+.header__phoneLink {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    white-space: nowrap;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    transition: color 200ms ease;
+}
+
+.header__phoneLink:hover {
+    color: #1672E1;
+}
+
+.header__phoneIcon {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1672E1;
+
+    margin-right: 14px;
+}
+
+.header__phoneLink:hover .header__phoneIcon {
+    animation: shake 300ms ease-in-out infinite;
+}
+
+@keyframes shake {
+    from {
+        transform: rotate(0) ;
+    }
+    25% {
+        transform: rotate(-5deg)
+    }
+    50% {
+        transform: rotate(0)
+    }
+    75% {
+        transform: rotate(5deg)
+    }
+    to {
+        transform: rotate(0)
+    }
+}
+
+
+
+.header__burger {
+    display: none;
+
+    height: 88px;
+    cursor: pointer;
+    padding: 30px;
+    padding-left: 42px;
+    padding-right: 0;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*.header__burger:hover .header__burgerLine::before {*/
+/*    animation-name: slideTo;*/
+/*    animation-duration: 0.5s;*/
+/*}*/
+
+/*.header__burger:hover .header__burgerLine::after {*/
+/*    animation-name: slideTo;*/
+/*    animation-duration: 0.5s;*/
+/*    animation-delay: 0.1s;*/
+/*}*/
+
+/*@keyframes slideTo {*/
+/*    0% {*/
+/*        transform: translateX(0);*/
+/*    }*/
+/*    45% {*/
+/*        opacity: 1;*/
+/*        transform: translateX(40px);*/
+/*    }*/
+/*    46% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*    50% {*/
+/*        transform: translateX(-40px);*/
+/*    }*/
+/*}*/
+
+@media screen and (max-width: 1440px) {
+    .header__menu {
+        max-width: 827px;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .header__menuList {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1021px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+
+    .header__burgerLine {
+        width: 38px;
+        height: 12px;
+        position: relative;
+
+        overflow: hidden;
+    }
+
+    .header__burgerLine::before {
+        position: absolute;
+        content: "";
+
+        top: 0;
+        width: 38px;
+        height: 2px;
+        background-color: var(--gray);
+    }
+
+    .header__burgerLine::after {
+        position: absolute;
+        content: "";
+
+        top: 10px;
+        width: 38px;
+        height: 2px;
+        background-color: var(--gray);
+    }
+}

@@ -1,0 +1,39 @@
+.offer {
+    background-image: url("img/offer-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.offer__wrapper {
+    color: #FFFFFF;
+    margin-left: 100px;
+    max-width: 30%;
+}
+
+.offer__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 45px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 27px;
+}
+
+.offer__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFFB2;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+.offer__form {
+
+}

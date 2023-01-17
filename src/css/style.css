@@ -1,0 +1,49 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "fonts.css";
+@import "vars.css";
+/*@import "/fonts/font-awesome/css/font-awesome.min.css";*/
+
+@import "sections/container.css";
+@import "sections/header.css";
+@import "sections/banner.css";
+@import "sections/fullImage.css";
+@import "sections/advantages.css";
+@import "sections/offer.css";
+@import "sections/achievements.css";
+@import "sections/contacts.css";
+
+
+@import "blocks/button.css";
+@import "blocks/form.css";
+@import "blocks/input.css";
+@import "blocks/modals.css";
+@import "blocks/overlay.css";
+@import "blocks/notification.css";
+@import "blocks/callback.css";
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SF UI Text', sans-serif;
+  box-sizing: border-box;
+
+  background-color: #ffffff;
+  line-height: 1.15;
+}
+
+input {
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 100vw;
+}

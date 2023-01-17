@@ -1,0 +1,56 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button--s {
+    height: 40px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.button--xl {
+    height: 55px;
+    padding-left: 28px;
+    padding-right: 28px;
+
+}
+
+.button--transparent {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #207FF1;
+
+    background-color: transparent;
+    border: 1px solid #207FF1;
+    border-radius: 12px;
+
+    transition: color 200ms ease, background-color 200ms ease;
+}
+
+.button--transparent:hover {
+    background-color: #207FF1;
+    color: #ffffff;
+}
+
+.button--blue {
+    background-color: #207FF1;
+    color: #ffffff;
+    border: 1px solid #207FF1;
+    transition: color 200ms ease, background-color 200ms ease, border 200ms ease;
+}
+
+.button--blue:hover {
+    color: #207FF1;
+    border: 1px solid #207FF1;
+    background-color: transparent;
+}

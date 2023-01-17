@@ -1,0 +1,9 @@
+.fullImage {
+    width: 100vw;
+    padding: 0;
+    background-image: url("img/banner-img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 750px;
+}

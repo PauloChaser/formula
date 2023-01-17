@@ -1,0 +1,44 @@
+.banner {
+    background-image: url("img/banner-bg.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+
+    padding-top: 120px;
+    padding-bottom: 116px;
+}
+
+.banner__row {
+    padding-right: 0;
+}
+
+.banner__left {
+    width: 50%;
+}
+
+.banner__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 72px;
+
+    color: #000000;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+.banner__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: #2B2B2B;
+
+    opacity: 0.9;
+    max-width: 70%;
+    padding: 0;
+    margin: 0 0 50px;
+}
+
+.banner__button {
+    width: 299px;
+}

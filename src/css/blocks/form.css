@@ -1,0 +1,11 @@
+.form {
+    max-width: 345px;
+}
+
+.form__inputWrapper {
+    margin-bottom: 10px;
+}
+
+.form__button {
+    width: 100%;
+}

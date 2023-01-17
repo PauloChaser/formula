@@ -1,0 +1,145 @@
+.achievements {
+    background: #F1F6FC;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.achievements__wrapper {
+    width: 100%;
+}
+
+.achievements__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 53px;
+    color: #000000E6;
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 23px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.achievements__title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 105px;
+    background-color: #207FF1;
+}
+
+.achievements__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.achievements__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #FFFFFF;
+    border-radius: 30px;
+    padding: 30px;
+    cursor: pointer;
+    min-height: 312px;
+    transition: box-shadow 200ms ease;
+}
+
+.achievements__item:hover {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+.achievements__itemTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+    color: #000000;
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+
+    transition: color 200ms ease;
+}
+
+.achievements__item:hover .achievements__itemTitle {
+    color: #207FF1;
+}
+
+.achievements__itemDescription {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    color: #767676;
+    opacity: 0.9;
+    margin: 0;
+    padding: 0;
+}
+
+.achievements__itemBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.achievements__itemDate {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    /* identical to box height, or 153% */
+
+    text-align: right;
+
+    color: #888888;
+
+    opacity: 0.9;
+}
+
+.achievements__itemButton {
+    background-color: #F1F6FC;
+    border-radius: 20px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #207FF1;
+    opacity: 0.9;
+    text-decoration: none;
+    padding: 6px 22px;
+
+    transition: background-color 200ms ease, color 200ms ease, transform 400ms ease;
+}
+
+.achievements__item:hover .achievements__itemButton {
+    background-color: #207FF1;
+    color: #FFFFFF;
+}
+
+.achievements__itemButton:hover {
+    animation: pulse 2s ease-in-out infinite 300ms;
+    transform: scale(1.1);
+}
+
+
+@keyframes pulse {
+    from {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}

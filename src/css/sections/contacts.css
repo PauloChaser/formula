@@ -1,0 +1,133 @@
+.contacts {
+    margin-top: 120px;
+    margin-bottom: 185px;
+}
+
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contacts__left {
+    width: 25%;
+}
+
+.contacts__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 53px;
+    color: #000000E6;
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 23px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.contacts__title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 105px;
+    background-color: #207FF1;
+}
+
+.contacts__phone {
+    display: inline-block;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: fit-content;
+
+    position: relative;
+
+    transition: color 500ms ease 100ms;
+}
+
+.contacts__phone::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #207FF1;
+
+    transition: width 600ms ease;
+}
+
+.contacts__phone:hover {
+    color: #207FF1;
+}
+
+.contacts__phone:hover::after {
+    width: 100%;
+}
+
+.contacts__address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+
+    color: #373737;
+    opacity: 0.9;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.contacts__button {
+    margin-bottom: 30px;
+}
+
+.contacts__socials {
+    display: flex;
+}
+
+.contacts__socialsItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+    border: 1px solid #207FF1;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.contacts__socialsItem:not(:last-child) {
+    margin-right: 15px;
+}
+
+.contacts__socialsItemIcon {
+    color: #207FF1;
+    font-size: 18px;
+    line-height: 21px;
+
+    transition: transform 200ms ease;
+}
+
+.contacts__socialsItem:hover .contacts__socialsItemIcon {
+    transform: scale(1.1);
+}
+
+.contacts__map {
+    width: 70%;
+    border-radius: 30px;
+    overflow: hidden;
+}
