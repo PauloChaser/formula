@@ -22,8 +22,8 @@
                          alt="Notification image" class="notification__itemImgItem">
                 </div>
                 <div class="notification__itemContent">
-                    <h5 class="notification__itemTitle">Акция! • Cкидка до 20%</h5>
-                    <p class="notification__itemText">Узнать подробнее о предложении?</p>
+                    <h5 class="notification__itemTitle">Акция! &bull; Cкидка до&nbsp;20%</h5>
+                    <p class="notification__itemText">Узнать подробнее о&nbsp;предложении?</p>
                 </div>
                 <div class="notification__itemIcon">
 
@@ -33,11 +33,11 @@
     </div>
     <div class="callback">
         <div class="callback__wrapper">
-            <div class="callback__iconWrapper">
+            <a href="#feedback" class="callback__iconWrapper js-open-modal">
                 <svg class="callback__icon">
                     <use href="./spritemap.svg#icon-callback"/>
                 </svg>
-            </div>
+            </a>
         </div>
     </div>
 
@@ -52,8 +52,9 @@
                 <span class="header__logoText">ОТДЕЛ ПРОДАЖ</span>
             </div>
             <div class="header__menu js-header-menu">
+                <h4 class="header__menuTitleTab">Меню</h4>
                 <nav class="header__menuNav">
-                    <ul class="header__menuList text">
+                    <ul class="header__menuList">
                         <li class="header__menuLink">
                             <a href="#" class="header__menuLinkItem">Каталог объектов</a>
                         </li>
@@ -71,6 +72,9 @@
                         </li>
                     </ul>
                 </nav>
+                <div class="header__menuButtonTabWrapper">
+                    <a href="#" class="header__menuButtonTab button button--blue button--xl">Оставить заявку</a>
+                </div>
             </div>
             <div class="header__right">
                 <div class="header__phone">
@@ -78,10 +82,10 @@
                             href="tel:84956599988"
                             class="header__phoneLink">
                         <i class="header__phoneIcon fa fa-volume-control-phone" aria-hidden="true"></i>
-                        +7 (495) 659- 99-88
+                        <span>+7 (495) 659- 99-88</span>
                     </a>
                 </div>
-                <a href="#" class="header__call button button--s button--transparent">Заказать звонок</a>
+                <a href="#feedback" class="header__call button button--s button--transparent js-open-modal">Заказать звонок</a>
             </div>
             <div class="header__burger js-burger">
                 <div class="header__burgerLine"></div>
@@ -93,12 +97,12 @@
         <div class="container__row banner__row">
             <div class="banner__wrapper">
                 <div class="banner__left">
-                    <h1 class="banner__title">Искусство обращения с недвижимостью</h1>
-                    <p class="banner__text">Недвижимость – это то, чем мы живём и то, что заставляет нас двигаться
-                        вперёд. Отвечаем за результат с 2015 года</p>
+                    <h1 class="banner__title">Искусство обращения с&nbsp;недвижимостью</h1>
+                    <p class="banner__text">Недвижимость&nbsp;&mdash; это&nbsp;то, чем мы&nbsp;живём и&nbsp;то, что заставляет нас двигаться
+                        вперёд. Отвечаем за&nbsp;результат с&nbsp;2015 года</p>
                     <div class="banner__button">
-                        <a href="#" class="button button--blue button--xl">
-                            Получить планировки и цены
+                        <a href="#feedback" class="button button--blue button--xl js-open-modal">
+                            Получить планировки и&nbsp;цены
                         </a>
                     </div>
                 </div>
@@ -106,17 +110,15 @@
         </div>
     </section>
 
-    <section class="container fullImage">
-<!--        <img src="img/banner-img.png" alt="">-->
-    </section>
+    <section class="container fullImage"></section>
 
     <section class="container advantages">
         <div class="container__row">
             <div class="advantages__wrapper">
                 <div class="advantages__top">
-                    <h2 class="advantages__title">АН “Отдел продаж” - 15 лет на рынке Сочи</h2>
-                    <p class="advantages__text">Более 15 лет наши специалисты в области недвижимости и права
-                        помогают покупать квартиры максимально безопасно и дешево</p>
+                    <h2 class="advantages__title">АН&nbsp;&laquo;Отдел продаж&raquo;&nbsp;&mdash; 15&nbsp;лет на&nbsp;рынке Сочи</h2>
+                    <p class="advantages__text">Более 15&nbsp;лет наши специалисты в&nbsp;области недвижимости и&nbsp;права
+                        помогают покупать квартиры максимально безопасно и&nbsp;дешево</p>
                 </div>
 
                 <div class="advantages__items">
@@ -135,7 +137,7 @@
                             клиентов
                         </h3>
                         <p class="advantages__itemDescription">
-                            Уже обратились к нам и поселились в своих квартирах
+                            Уже обратились к&nbsp;нам и&nbsp;поселились в&nbsp;своих квартирах
                         </p>
                     </div>
                     <div class="advantages__item">
@@ -144,7 +146,7 @@
                             человек
                         </h3>
                         <p class="advantages__itemDescription">
-                            Переедут в Сочи благодаря нашим услугам и так далее
+                            Переедут в&nbsp;Сочи благодаря нашим услугам и&nbsp;так далее
                         </p>
                     </div>
                     <div class="advantages__item">
@@ -153,7 +155,7 @@
                             сделок
                         </h3>
                         <p class="advantages__itemDescription">
-                            Каждый день по всему Сочи
+                            Каждый день по&nbsp;всему Сочи
                         </p>
                     </div>
                 </div>
@@ -166,8 +168,8 @@
             <div class="offer__wrapper">
                 <h3 class="offer__title">Получите выгодное предложение!</h3>
                 <p class="offer__description">
-                    Ещё год назад цены на недвижимость были ниже на 34%.
-                    <br>Лучшее время для покупки квартиры - "прошлой зимой".
+                    Ещё год назад цены на&nbsp;недвижимость были ниже на&nbsp;34%.
+                    <br>Лучшее время для покупки квартиры&nbsp;&mdash; &laquo;прошлой зимой&raquo;.
                 </p>
                 <form action="#" class="offer__form form">
                     <div class="form__inputWrapper">
@@ -189,10 +191,10 @@
                 <h3 class="achievements__title">Наши заслуги</h3>
                 <div class="achievements__items">
                     <div class="achievements__item">
-                        <h4 class="achievements__itemTitle">Выгодная ставка от 6,5% на покупку коммерческой
+                        <h4 class="achievements__itemTitle">Выгодная ставка от&nbsp;6,5% на&nbsp;покупку коммерческой
                             недвижимости</h4>
-                        <p class="achievements__itemDescription">Мы запустили программу субсидированной ипотеки для
-                            Сочинских предпринимателей малого и среднего бизнеса.</p>
+                        <p class="achievements__itemDescription">Мы&nbsp;запустили программу субсидированной ипотеки для
+                            Сочинских предпринимателей малого и&nbsp;среднего бизнеса.</p>
                         <div class="achievements__itemBottom">
                             <div class="achievements__itemDate">
                                 24.05.2022
@@ -203,10 +205,10 @@
                         </div>
                     </div>
                     <div class="achievements__item">
-                        <h4 class="achievements__itemTitle">Выгодная ставка от 6,5% на покупку коммерческой
+                        <h4 class="achievements__itemTitle">Выгодная ставка от&nbsp;6,5% на&nbsp;покупку коммерческой
                             недвижимости</h4>
-                        <p class="achievements__itemDescription">Мы запустили программу субсидированной ипотеки для
-                            Сочинских предпринимателей малого и среднего бизнеса.</p>
+                        <p class="achievements__itemDescription">Мы&nbsp;запустили программу субсидированной ипотеки для
+                            Сочинских предпринимателей малого и&nbsp;среднего бизнеса.</p>
                         <div class="achievements__itemBottom">
                             <div class="achievements__itemDate">
                                 24.05.2022
@@ -217,10 +219,10 @@
                         </div>
                     </div>
                     <div class="achievements__item">
-                        <h4 class="achievements__itemTitle">Выгодная ставка от 6,5% на покупку коммерческой
+                        <h4 class="achievements__itemTitle">Выгодная ставка от&nbsp;6,5% на&nbsp;покупку коммерческой
                             недвижимости</h4>
-                        <p class="achievements__itemDescription">Мы запустили программу субсидированной ипотеки для
-                            Сочинских предпринимателей малого и среднего бизнеса.</p>
+                        <p class="achievements__itemDescription">Мы&nbsp;запустили программу субсидированной ипотеки для
+                            Сочинских предпринимателей малого и&nbsp;среднего бизнеса.</p>
                         <div class="achievements__itemBottom">
                             <div class="achievements__itemDate">
                                 24.05.2022
@@ -231,10 +233,10 @@
                         </div>
                     </div>
                     <div class="achievements__item">
-                        <h4 class="achievements__itemTitle">Выгодная ставка от 6,5% на покупку коммерческой
+                        <h4 class="achievements__itemTitle">Выгодная ставка от&nbsp;6,5% на&nbsp;покупку коммерческой
                             недвижимости</h4>
-                        <p class="achievements__itemDescription">Мы запустили программу субсидированной ипотеки для
-                            Сочинских предпринимателей малого и среднего бизнеса.</p>
+                        <p class="achievements__itemDescription">Мы&nbsp;запустили программу субсидированной ипотеки для
+                            Сочинских предпринимателей малого и&nbsp;среднего бизнеса.</p>
                         <div class="achievements__itemBottom">
                             <div class="achievements__itemDate">
                                 24.05.2022
@@ -245,10 +247,10 @@
                         </div>
                     </div>
                     <div class="achievements__item">
-                        <h4 class="achievements__itemTitle">Выгодная ставка от 6,5% на покупку коммерческой
+                        <h4 class="achievements__itemTitle">Выгодная ставка от&nbsp;6,5% на&nbsp;покупку коммерческой
                             недвижимости</h4>
-                        <p class="achievements__itemDescription">Мы запустили программу субсидированной ипотеки для
-                            Сочинских предпринимателей малого и среднего бизнеса.</p>
+                        <p class="achievements__itemDescription">Мы&nbsp;запустили программу субсидированной ипотеки для
+                            Сочинских предпринимателей малого и&nbsp;среднего бизнеса.</p>
                         <div class="achievements__itemBottom">
                             <div class="achievements__itemDate">
                                 24.05.2022
@@ -259,10 +261,10 @@
                         </div>
                     </div>
                     <div class="achievements__item">
-                        <h4 class="achievements__itemTitle">Выгодная ставка от 6,5% на покупку коммерческой
+                        <h4 class="achievements__itemTitle">Выгодная ставка от&nbsp;6,5% на&nbsp;покупку коммерческой
                             недвижимости</h4>
-                        <p class="achievements__itemDescription">Мы запустили программу субсидированной ипотеки для
-                            Сочинских предпринимателей малого и среднего бизнеса.</p>
+                        <p class="achievements__itemDescription">Мы&nbsp;запустили программу субсидированной ипотеки для
+                            Сочинских предпринимателей малого и&nbsp;среднего бизнеса.</p>
                         <div class="achievements__itemBottom">
                             <div class="achievements__itemDate">
                                 24.05.2022
@@ -285,9 +287,9 @@
                     <a href="tel:84956599988" class="contacts__phone">+7 (495) 659-99-88</a>
                     <p class="contacts__address">г. Сочи,
                         <br>ул. Конституции СССР 4,
-                        <br>2 этаж, офис 224
+                        <br>2&nbsp;этаж, офис 224
                     </p>
-                    <a href="#" class="contacts__button button button--xl button--blue">Обратный звонок</a>
+                    <a href="#feedback" class="contacts__button button button--xl button--blue js-open-modal">Обратный звонок</a>
                     <div class="contacts__socials">
                         <a href="#" class="contacts__socialsItem">
                             <i class="contacts__socialsItemIcon fa fa-whatsapp" aria-hidden="true"></i>
@@ -303,21 +305,66 @@
 
                 <div class="contacts__map">
                     <iframe src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=39.716918%2C43.587458&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgk3NzIxNzAxNjUSatCg0L7RgdGB0LjRjywg0JrRgNCw0YHQvdC%2B0LTQsNGA0YHQutC40Lkg0LrRgNCw0LksINCh0L7Rh9C4LCDRg9C70LjRhtCwINCa0L7QvdGB0YLQuNGC0YPRhtC40Lgg0KHQodCh0KAsIDQiCg0g3h5CFY5ZLkI%3D&z=16.87"
-                            width="100%" height="400" frameborder="0" allowfullscreen="true">
+                            width="100%" height="100%" frameborder="0" allowfullscreen="true">
                     </iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="modals js-modals">
-        <div class="modals__item" id="consultation">
-            <div class="container consultation">
-                <div class="container__row consultation__row">
-                </div>
-                <div class="consultation__close js-close-modals">
-                    <svg class="consultation__closeIcon">
-                        <use href="./spritemap.svg#icon-close-popUp"/>
+    <section class="modals  js-modals">
+        <div class="modals__item " id="feedback">
+            <div class="container feedback">
+                <form action="#" class="feedback__form formPopUp">
+                    <div class="formPopUp__heading">
+                        <h4 class="formPopUp__title">Форма обратной связи</h4>
+                        <h5 class="formPopUp__subtitle">Заполните форму и&nbsp;получите выгодное решение</h5>
+                    </div>
+                    <div class="formPopUp__inputWrapper">
+                        <label for="nameFeedback">Ваше Имя</label>
+                        <input
+                                type="text"
+                                class="input input--border"
+                                id="nameFeedback"
+                                name="name"
+                                placeholder=""
+                        />
+                    </div>
+                    <div class="formPopUp__inputWrapper">
+                        <label for="phoneFeedback">Номер телефона</label>
+                        <input
+                                type="text"
+                                class="input input--border"
+                                id="phoneFeedback"
+                                name="phone"
+                                placeholder="+7 (___) ___ - __ - __"
+                        />
+                    </div>
+
+                    <div class="formPopUp__inputWrapper">
+                        <label for="textFeedback">Опишите свою ситуацию</label>
+                        <textarea class="textarea" id="textFeedback" placeholder=""></textarea>
+                    </div>
+
+                    <div class="formPopUp__inputs">
+                        <div class="formPopUp__checkboxWrapper">
+                            <div class="checkbox">
+                                <input type="checkbox" class="checkbox__element" id="checkbox">
+                                <label class="checkbox__label" for="checkbox">
+                                    Я&nbsp;прочитал и&nbsp;согласен с <br><a href="#" class="checkbox__personalData">политикой
+                                    конфиденциальности</a>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="formPopUp__button">
+                            <input type="submit" class="button button--blue button--xl" value="Оставить заявку">
+                        </div>
+                    </div>
+                </form>
+                <div class="feedback__close js-close-modals">
+                    <svg class="feedback__closeIcon">
+                        <use href="./spritemap.svg#icon-close"/>
                     </svg>
                 </div>
             </div>

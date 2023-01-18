@@ -30,10 +30,69 @@
     line-height: 24px;
     color: #FFFFFFB2;
     padding: 0;
-    margin: 0;
-    margin-bottom: 100px;
+    margin: 0 0 100px;
+    width: 90%;
 }
 
 .offer__form {
+    margin: 0;
+    max-width: 345px;
+}
 
+@media screen and (max-width: 1350px) {
+    .offer__wrapper {
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 1021px) {
+    .offer {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .offer__wrapper {
+        max-width: 50%;
+        margin-left: 0;
+    }
+
+    .offer__title {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+
+
+    .offer__description {
+        margin: 0 0 50px;
+    }
+}
+
+@media screen and (max-width: 1021px) {
+    .offer {
+        padding-top: 60px;
+        padding-bottom: 22px;
+    }
+
+    .offer__wrapper {
+        max-width: 100%;
+    }
+
+    .offer__title {
+        font-size: 24px;
+        line-height: 1.33;
+        margin-bottom: 30px;
+    }
+
+    .offer__description {
+        font-size: 14px;
+        line-height: 1.57;
+        width: 100%;
+        margin: 0 0 114px;
+    }
+
+    .offer__form {
+        margin: 0;
+        max-width: 100%;
+    }
 }

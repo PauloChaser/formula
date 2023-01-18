@@ -16,6 +16,7 @@
 }
 
 .advantages__title {
+    width: 80%;
     font-style: normal;
     font-weight: 600;
     font-size: 38px;
@@ -45,10 +46,9 @@
     font-size: 18px;
     line-height: 29px;
     color: #2B2B2B;
-    margin: 0;
     padding: 0;
 
-    margin-top: 15px;
+    margin: 9px 0 0 15px;
     width: 75%;
 }
 
@@ -72,14 +72,14 @@
     font-size: 18px;
     line-height: 45px;
     color: #000000;
-    margin: 0;
     padding: 0;
-    margin-bottom: 25px;
+    margin: 0 0 10px;
 }
 
 .advantages__itemTitleNum {
     font-size: 54px;
     color: #207FF1;
+    margin-right: 5px;
 }
 
 .advantages__itemDescription {
@@ -91,4 +91,93 @@
     color: #767676;
     margin: 0;
     padding: 0;
+}
+
+@media screen and (max-width: 1021px) {
+    .advantages {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .advantages__top {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 50px;
+    }
+
+    .advantages__title {
+        width: 80%;
+        font-size: 32px;
+        line-height: 1.2;
+
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
+
+    .advantages__text {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 0;
+        width: 75%;
+    }
+
+    .advantages__items {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        grid-gap: 30px;
+    }
+
+    .advantages__item {
+        padding: 30px 25px;
+    }
+
+    .advantages__itemTitleNum {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .advantages {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .advantages__title {
+        width: 100%;
+        font-size: 24px;
+        line-height: 1.33;
+
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+
+    .advantages__text {
+        font-size: 14px;
+        line-height: 1.57;
+        width: 100%;
+    }
+
+    .advantages__items {
+        grid-gap: 20px;
+    }
+
+    .advantages__item {
+        padding: 30px;
+    }
+
+    .advantages__itemTitle {
+        margin: 0 0 25px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .advantages__itemTitleNum {
+        font-size: 36px;
+    }
+
+    .advantages__itemDescription {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
 }

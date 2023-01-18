@@ -1,0 +1,47 @@
+.feedback {
+    width: 580px;
+    height: 702px;
+
+    background: #FFFFFF;
+    box-shadow: 0 5px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    padding: 32px 40px 40px 40px;
+    position: relative;
+}
+
+.feedback__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #F1F6FC;
+    border-radius: 0 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+.feedback__closeIcon {
+    width: 16px;
+    height: 16px;
+
+    transition: transform 200ms ease;
+}
+
+.feedback__close:hover .feedback__closeIcon {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 600px) {
+    .feedback {
+        width: 100vw;
+        height: auto;
+        border-radius: 0;
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

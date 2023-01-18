@@ -7,3 +7,21 @@
     background-repeat: no-repeat;
     height: 750px;
 }
+
+@media screen and (max-width: 1440px) {
+    .fullImage {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 1021px) {
+    .fullImage {
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .fullImage {
+        height: 300px;
+    }
+}

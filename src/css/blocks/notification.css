@@ -13,7 +13,7 @@
 
 .notification__item {
     display: flex;
-
+    align-items: center;
     padding: 10px 15px;
     background: linear-gradient(90deg, #1F202E 0%, #3D3F56 100%);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
@@ -74,4 +74,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media screen and (max-width: 600px) {
+    .notification {
+        display: none;
+    }
 }

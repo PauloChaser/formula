@@ -82,6 +82,7 @@
     opacity: 0.9;
     margin: 0;
     padding: 0;
+    width: 90%;
 }
 
 .achievements__itemBottom {
@@ -96,12 +97,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 23px;
-    /* identical to box height, or 153% */
-
-    text-align: right;
-
     color: #888888;
-
     opacity: 0.9;
 }
 
@@ -141,5 +137,101 @@
     }
     to {
         transform: scale(1.1);
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .achievements__itemTitle {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
+@media screen and (max-width: 1021px) {
+    .achievements {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .achievements__title {
+        font-size: 25px;
+        line-height: 1.4;
+
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+    }
+
+    .achievements__items {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .achievements__item {
+        padding: 25px;
+        min-height: 280px;
+    }
+
+    .achievements__itemTitle {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .achievements__itemDescription {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .achievements__itemDate {
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    .achievements__itemButton {
+        font-size: 14px;
+        padding: 6px 22px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .achievements {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+
+    .achievements__title {
+        font-size: 24px;
+        line-height: 1.33;
+    }
+
+    .achievements__items {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .achievements__item {
+        padding: 20px;
+        min-height: 299px;
+    }
+
+    .achievements__itemTitle {
+        font-size: 20px;
+    }
+
+    .achievements__itemDescription {
+        font-size: 14px;
+        line-height: 1.64;
+    }
+
+    .achievements__itemDate {
+        font-size: 15px;
+        line-height: 1.53;
+    }
+
+    .achievements__itemButton {
+        font-size: 15px;
+        line-height: 1;
+
     }
 }

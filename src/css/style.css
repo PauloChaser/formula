@@ -1,7 +1,16 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "fonts.css";
 @import "vars.css";
-/*@import "/fonts/font-awesome/css/font-awesome.min.css";*/
+
+@import "blocks/button.css";
+@import "blocks/form.css";
+@import "blocks/input.css";
+@import "blocks/modals.css";
+@import "blocks/notification.css";
+@import "blocks/callback.css";
+@import "blocks/formPopUp.css";
+@import "blocks/textarea.css";
+@import "blocks/checkbox.css";
 
 @import "sections/container.css";
 @import "sections/header.css";
@@ -11,15 +20,8 @@
 @import "sections/offer.css";
 @import "sections/achievements.css";
 @import "sections/contacts.css";
+@import "sections/feedback.css";
 
-
-@import "blocks/button.css";
-@import "blocks/form.css";
-@import "blocks/input.css";
-@import "blocks/modals.css";
-@import "blocks/overlay.css";
-@import "blocks/notification.css";
-@import "blocks/callback.css";
 
 
 
