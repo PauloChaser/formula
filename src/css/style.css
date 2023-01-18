@@ -1,6 +1,7 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import "fonts.css";
-@import "vars.css";
+@import "font-awesome.css";
+@import "font-awesome.min.css";
 
 @import "blocks/button.css";
 @import "blocks/form.css";
